@@ -15,20 +15,15 @@ This API reference provides information on the specific endpoints available thro
 | [Components](https://developer.buddypress.org/bp-rest-api/reference/components/) | `/buddypress/v1/components` |
 | [Members](https://developer.buddypress.org/bp-rest-api/reference/members/) | `/buddypress/v1/members` |
 | [Activity](https://developer.buddypress.org/bp-rest-api/reference/activity/) | `/buddypress/v1/activity` |
-| [Extended Profiles](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/):  
-– [Profile Group](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/profile-group/)  
-– [Profile Field](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/profile-field/)  
-– [Profile Data](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/profile-data/) | `/buddypress/v1/xprofile/groups`  
-`/buddypress/v1/xprofile/fields`  
-`/buddypress/v1/xprofile/<field_id>/data/<user_id>` |
-| [User Groups](https://developer.buddypress.org/bp-rest-api/reference/user-groups/):  
-– [Groups](https://developer.buddypress.org/bp-rest-api/reference/user-groups/groups/)  
-– [Group Membership](https://developer.buddypress.org/bp-rest-api/reference/user-groups/group-membership/)  
-– [Group Membership Requests](https://developer.buddypress.org/bp-rest-api/reference/user-groups/group-membership-requests/)  
-– [Group Invites](https://developer.buddypress.org/bp-rest-api/reference/user-groups/group-invites/) | `/buddypress/v1/groups`  
-`/buddypress/v1/groups/<group_id>/members`  
-`/buddypress/v1/groups/<group_id>/membership-request`  
-`/buddypress/v1/groups/<group_id>/invites` |
+| [Extended Profiles](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/): |  | 
+| – [Profile Group](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/profile-group/) | `/buddypress/v1/xprofile/groups` | 
+| – [Profile Field](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/profile-field/) | `/buddypress/v1/xprofile/fields` |  
+| – [Profile Data](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/profile-data/) | `/buddypress/v1/xprofile/<field_id>/data/<user_id>` |   
+| [User Groups](https://developer.buddypress.org/bp-rest-api/reference/user-groups/): |  | 
+| – [Groups](https://developer.buddypress.org/bp-rest-api/reference/user-groups/groups/) | `/buddypress/v1/groups` | 
+| – [Group Membership](https://developer.buddypress.org/bp-rest-api/reference/user-groups/group-membership/) | `/buddypress/v1/groups/<group_id>/members` |  
+| – [Group Membership Requests](https://developer.buddypress.org/bp-rest-api/reference/user-groups/group-membership-requests/) | `/buddypress/v1/groups/<group_id>/membership-request` |  
+| – [Group Invites](https://developer.buddypress.org/bp-rest-api/reference/user-groups/group-invites/) | `/buddypress/v1/groups/<group_id>/invites` |   
 | [Private Messaging](https://developer.buddypress.org/bp-rest-api/reference/private-messaging/):  
 – [Sitewide Notices](https://developer.buddypress.org/bp-rest-api/reference/private-messaging/sitewide-notices/) | `/buddypress/v1/messages`  
 `/buddypress/v1/sitewide-notices` |
