@@ -24,20 +24,15 @@ This API reference provides information on the specific endpoints available thro
 | – [Group Membership](https://developer.buddypress.org/bp-rest-api/reference/user-groups/group-membership/) | `/buddypress/v1/groups/<group_id>/members` |  
 | – [Group Membership Requests](https://developer.buddypress.org/bp-rest-api/reference/user-groups/group-membership-requests/) | `/buddypress/v1/groups/<group_id>/membership-request` |  
 | – [Group Invites](https://developer.buddypress.org/bp-rest-api/reference/user-groups/group-invites/) | `/buddypress/v1/groups/<group_id>/invites` |   
-| [Private Messaging](https://developer.buddypress.org/bp-rest-api/reference/private-messaging/):  
-– [Sitewide Notices](https://developer.buddypress.org/bp-rest-api/reference/private-messaging/sitewide-notices/) | `/buddypress/v1/messages`  
-`/buddypress/v1/sitewide-notices` |
+| [Private Messaging](https://developer.buddypress.org/bp-rest-api/reference/private-messaging/) | `/buddypress/v1/messages` | 
+| [Sitewide Notices](https://developer.buddypress.org/bp-rest-api/reference/private-messaging/sitewide-notices/) | `/buddypress/v1/sitewide-notices` |
 | [Screen Notifications](https://developer.buddypress.org/bp-rest-api/reference/screen-notifications/) | `/buddypress/v1/notifications` |
-| [Attachments](https://developer.buddypress.org/bp-rest-api/reference/attachments/)  
-– [Member Avatar](https://developer.buddypress.org/bp-rest-api/reference/attachments/member-avatar/)  
-– [Member Cover Image](https://developer.buddypress.org/bp-rest-api/reference/attachments/member-cover-image/)  
-– [Group Avatar](https://developer.buddypress.org/bp-rest-api/reference/attachments/group-avatar/)  
-– [Group Cover Image](https://developer.buddypress.org/bp-rest-api/reference/attachments/group-cover-image/)  
-– [Blog Avatar](https://developer.buddypress.org/bp-rest-api/reference/attachments/blog-avatar/) | `/buddypress/v1/members/<user_id>/avatar`  
-`/buddypress/v1/members/<user_id>/cover`  
-`/buddypress/v1/groups/<group_id>/avatar`  
-`/buddypress/v1/groups/<group_id>/cover`  
-`/buddypress/v1/blogs/<id>/avatar` |
+| [Attachments](https://developer.buddypress.org/bp-rest-api/reference/attachments/): |  |  
+| – [Member Avatar](https://developer.buddypress.org/bp-rest-api/reference/attachments/member-avatar/) | `/buddypress/v1/members/<user_id>/avatar` |
+| – [Member Cover Image](https://developer.buddypress.org/bp-rest-api/reference/attachments/member-cover-image/) | `/buddypress/v1/members/<user_id>/cover` | 
+| – [Group Avatar](https://developer.buddypress.org/bp-rest-api/reference/attachments/group-avatar/) | `/buddypress/v1/groups/<group_id>/avatar` | 
+| – [Group Cover Image](https://developer.buddypress.org/bp-rest-api/reference/attachments/group-cover-image/) | `/buddypress/v1/groups/<group_id>/cover` |  
+| – [Blog Avatar](https://developer.buddypress.org/bp-rest-api/reference/attachments/blog-avatar/) | `/buddypress/v1/blogs/<id>/avatar` |  
 | [User Blogs](https://developer.buddypress.org/bp-rest-api/reference/blogs/) | `/buddypress/v1/blogs` |
 | [User Signups](https://developer.buddypress.org/bp-rest-api/reference/signup/) | `/buddypress/v1/signup` |
 | [Friend Connections](https://developer.buddypress.org/bp-rest-api/reference/friends/) | `/buddypress/v1/friends` |
