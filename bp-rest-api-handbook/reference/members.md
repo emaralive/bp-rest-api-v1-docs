@@ -8,27 +8,27 @@ The BuddyPress Members endpoint extends the WordPress Users one to include speci
 
 The schema defines all the fields that exist for a member object.
 
-| Attribue | Type | Description |
+| Attribute | Type | Description |
 |:--- |:--- | :---- |
 |id | `integer` |Unique identifier for the member.<br><br>Read only<br><br>**Context**: embed, view, edit|
 |name| `string` |Display name for the member.<br><br>**Context**: embed, view, edit|
 |mention_name| `string` |The name used for that user in @-mentions.<br><br>**Context**: embed, view, edit|
-|link|string, uri|Profile URL of the member.<br><br>Read only<br><br>**Context**: embed, view, edit|
-|user_login|string|An alphanumeric identifier for the member.<br><br>**Context**: embed, view, edit|
-|member_types|array|Member types associated with the member. See this documentation page for more information.<br><br>Read only<br><br>**Context**: embed, view, edit|
-|registered_date|string or null|Registration date for the member.<br><br>Read only<br><br>**Context**: edit|
-|registered_date_gmt|string or null|The date the member was registered, as GMT.<br><br>Read only<br><br>**Context**: edit|
-|password|string|Password for the member (never included).<br><br>**Context**: none|
-|roles|array|Roles assigned to the member.<br><br>**Context**: edit|
-|capabilities|object|All capabilities assigned to the member.<br><br>Read only<br><br>**Context**: edit|
-|extra_capabilities|object|All capabilities assigned to the member.<br><br>Read only<br><br>**Context**: edit|
-|xprofile (1)|array|Member xProfile groups and its fields.<br><br>Read only<br><br>**Context**: view, edit|
-|friendship_status (2)|boolean|Whether the logged in user has a friendship relationship with the fetched user.<br><br>Read only<br><br>**Context**: view, edit|
-|friendship_status_slug (2)|string|Slug of the friendship relationship status the logged in user has with the fetched user.<br><br>Read only<br><br>One of: is_friend, not_friends, pending, awaiting_response<br><br>**Context**: view, edit|
-|last_activity|object|Last date the member was active on the site (object properties: timediff, date and date_gmt).<br><br>Read only<br><br>**Context**: view, edit|
-|latest_update (3)|object|The content of the latest activity posted by the member (object properties: id, raw and rendered).<br><br>Read only<br><br>**Context**: view, edit|
-|total_friend_count (2)|integer|Total number of friends for the member..<br><br>Read only<br><br>**Context**: view, edit|
-|avatar_urls (4)|object|Avatar URLs for the member (Full & Thumb sizes).<br><br>Read only<br><br>**Context**: embed, view, edit|
+|link| `string`, `uri`|Profile URL of the member.<br><br>Read only<br><br>**Context**: embed, view, edit|
+|user_login| `string` |An alphanumeric identifier for the member.<br><br>**Context**: embed, view, edit|
+|member_types| `array` |Member types associated with the member. See this documentation page for more information.<br><br>Read only<br><br>**Context**: embed, view, edit|
+|registered_date| `string` or `null` |Registration date for the member.<br><br>Read only<br><br>**Context**: edit|
+|registered_date_gmt| `string` or `null` |The date the member was registered, as GMT.<br><br>Read only<br><br>**Context**: edit|
+|password| `string` |Password for the member (never included).<br><br>**Context**: none|
+|roles| `array` |Roles assigned to the member.<br><br>**Context**: edit|
+|capabilities| `object` |All capabilities assigned to the member.<br><br>Read only<br><br>**Context**: edit|
+|extra_capabilities| `object` |All capabilities assigned to the member.<br><br>Read only<br><br>**Context**: edit|
+|xprofile (1)| `array` |Member xProfile groups and its fields.<br><br>Read only<br><br>**Context**: view, edit|
+|friendship_status (2)| `boolean` |Whether the logged in user has a friendship relationship with the fetched user.<br><br>Read only<br><br>**Context**: view, edit|
+|friendship_status_slug (2)| `string` |Slug of the friendship relationship status the logged in user has with the fetched user.<br><br>Read only<br><br>One of: is_friend, not_friends, pending, awaiting_response<br><br>**Context**: view, edit|
+|last_activity| `object` |Last date the member was active on the site (object properties: timediff, date and date_gmt).<br><br>Read only<br><br>**Context**: view, edit|
+|latest_update (3)| `object` |The content of the latest activity posted by the member (object properties: id, raw and rendered).<br><br>Read only<br><br>**Context**: view, edit|
+|total_friend_count (2)| `integer` |Total number of friends for the member..<br><br>Read only<br><br>**Context**: view, edit|
+|avatar_urls (4)| `object` |Avatar URLs for the member (Full & Thumb sizes).<br><br>Read only<br><br>**Context**: embed, view, edit|
 
 *(2) Data is only fetched if the Friends component is active  
 (3) Data is only fetched if the Activity component is active  
