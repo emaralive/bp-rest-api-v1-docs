@@ -1,18 +1,18 @@
-# Members
+# Members Ednpoint
 
 The BuddyPress Members endpoint extends the WordPress Users one to include specific BuddyPress data such as profile fields data *(1)* and use the `BP_User_Query` instead of the `WP_User_Query` to fetch the members.
 
 *(1) If the Extend profiles component is active on the website.*
 
-## Schema
+## Members Schema
 
 The schema defines all the fields that exist for a member object.
 
 | Attribue | Type | Description |
 |:--- |:--- | :---- |
-|id | integer|Unique identifier for the member.<br><br>Read only<br><br>**Context**: embed, view, edit|
-|name|string|Display name for the member.<br><br>**Context**: embed, view, edit|
-|mention_name|string|The name used for that user in @-mentions.<br><br>**Context**: embed, view, edit|
+|id | `integer` |Unique identifier for the member.<br><br>Read only<br><br>**Context**: embed, view, edit|
+|name| `string` |Display name for the member.<br><br>**Context**: embed, view, edit|
+|mention_name| `string` |The name used for that user in @-mentions.<br><br>**Context**: embed, view, edit|
 |link|string, uri|Profile URL of the member.<br><br>Read only<br><br>**Context**: embed, view, edit|
 |user_login|string|An alphanumeric identifier for the member.<br><br>**Context**: embed, view, edit|
 |member_types|array|Member types associated with the member. See this documentation page for more information.<br><br>Read only<br><br>**Context**: embed, view, edit|
@@ -38,33 +38,20 @@ The schema defines all the fields that exist for a member object.
 
 ### Arguments
 
-| Name | Type | Description |
+| Attribute | Type | Description |
 | --- | --- | --- |
-| context | `string` | Scope under which the request is made; determines fields present in response.  
-Default: `view`  
-One of: `view`, `embed`, `edit` |
-| page | `integer` | Current page of the collection.  
-Default: `1` |
-| per\_page | `integer` | Maximum number of members to be returned in result set.  
-Default: `10` |
+| context | `string` | Scope under which the request is made; determines fields present in response.<br><br>**Default**: `view`<br><br>**One of**: `view`, `embed`, `edit` |
+| page | `integer` | Current page of the collection. <br><br>**Default**: `1` |
+| per\_page | `integer` | Maximum number of members to be returned in result set. <br><br>**Default**: `10` |
 | search | `string` | Limit results to those matching a string. |
-| exclude | `array` | Ensure result set excludes specific IDs.  
-Default: `[]` |
-| include | `array` | Ensure result set include specific IDs.  
-Default: `[]` |
-| type | `string` | Shorthand for certain orderby/order combinations.  
-Default: `newest`  
-One of: `active, newest, alphabetical, random, online, popular` |
-| user\_id | `integer` | Limit results to friends of a user.  
-Default: `0` |
-| user\_ids | `array` | Pass IDs of users to limit result set.  
-Default: `[]` |
-| populate\_extras | `boolean` | Whether to fetch extra BP data about the returned members.  
-Default: `false` |
-| member\_type | `array` | Limit results set to certain type(s). See this [documentation page](https://codex.buddypress.org/developer/member-types/) for more information.  
-Default: `[]` |
-| xprofile | `array` | Limit results set to a certain XProfile field.  
-Default: `[]` |
+| exclude | `array` | Ensure result set excludes specific IDs. <br><br>**Default**: `[]` |
+| include | `array` | Ensure result set include specific IDs.<br><br>**Default**: `[]` |
+| type | `string` | Shorthand for certain orderby/order combinations.<br><br>**Default**: `newest` <br><br>**One of**: `active, newest, alphabetical, random, online, popular` |
+| user\_id | `integer` | Limit results to friends of a user.<br><br>**Default**: `0` |
+| user\_ids | `array` | Pass IDs of users to limit result set.<br><br>**Default**: `[]` |
+| populate\_extras | `boolean` | Whether to fetch extra BP data about the returned members.<br><br>**Default**: `false` |
+| member\_type | `array` | Limit results set to certain type(s). See this [documentation page](https://codex.buddypress.org/developer/member-types/) for more information.<br><br>**Default**: `[]` |
+| xprofile | `array` | Limit results set to a certain XProfile field.<br><br>**Default**: `[]` |
 
 ### Definition
 
