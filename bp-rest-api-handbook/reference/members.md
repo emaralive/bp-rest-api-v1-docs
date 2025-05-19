@@ -1,4 +1,4 @@
-# Members Ednpoint
+# Members Endpoint
 
 The BuddyPress Members endpoint extends the WordPress Users one to include specific BuddyPress data such as profile fields data *(1)* and use the `BP_User_Query` instead of the `WP_User_Query` to fetch the members.
 
@@ -128,14 +128,11 @@ bp.apiRequest( {
 
 ### Arguments
 
-| Name | Type | Description |
+| Attribute | Type | Description |
 | --- | --- | --- |
 | id | `integer` | Unique identifier for the member. |
-| context | `string` | Scope under which the request is made; determines fields present in response.  
-Default: `view`  
-One of: `view, embed, edit` |
-| populate\_extras | `boolean` | Whether to fetch extra BP data about the returned member.  
-Default: `false` |
+| context | `string` | Scope under which the request is made; determines fields present in response.<br><br>**Default**: `view`<br><br>**One of**: `view, embed, edit` |
+| populate\_extras | `boolean` | Whether to fetch extra BP data about the returned member.<br><br>**Default**: `false` |
 
 ### Definition
 
@@ -163,7 +160,7 @@ bp.apiRequest( {
 
 ### Arguments
 
-| Name | Type | Description |
+| Attribute | Type | Description |
 | --- | --- | --- |
 | id | `integer` | Unique identifier for the user. |
 | name | `string` | Display name for the member. |
@@ -198,13 +195,11 @@ bp.apiRequest( {
 
 ### Arguments
 
-| Name | Type | Description |
+| Attribute | Type | Description |
 | --- | --- | --- |
-| id | `integer` | Unique identifier for the member.  
-**Required** |
+| id | `integer` | Unique identifier for the member.<br><br>**Required** |
 | force | `boolean` | Required to be true, as members do not support trashing. |
-| reassign | `integer` | Reassign the deleted member’s posts and links to this user ID.  
-**Required** |
+| reassign | `integer` | Reassign the deleted member’s posts and links to this user ID.<br><br>**Required** |
 
 ### Definition
 
@@ -234,11 +229,9 @@ bp.apiRequest( {
 
 ### Arguments
 
-| Name | Type | Description |
+| Attribute | Type | Description |
 | --- | --- | --- |
-| context | `string` | Scope under which the request is made; determines fields present in response.  
-Default: `view`  
-One of: `view, embed, edit` |
+| context | `string` | Scope under which the request is made; determines fields present in response.>br><br>**Default**: `view`<br><br>**One of**: `view, embed, edit` |
 
 ### Definition
 
@@ -266,7 +259,7 @@ bp.apiRequest( {
 
 ### Arguments
 
-| Name | Type | Description |
+| Attribute | Type | Description |
 | --- | --- | --- |
 | name | `string` | Display name for the member. |
 | roles *(1)* | `array` | Roles assigned to the member. |
@@ -301,12 +294,10 @@ bp.apiRequest( {
 
 ### Arguments
 
-| Name | Type | Description |
+| Attribute | Type | Description |
 | --- | --- | --- |
-| force | `boolean` | True as users do not support trashing  
-**Required** |
-| reassign | `integer` | Reassign the deleted member’s posts and links to this user ID.  
-**Required** |
+| force | `boolean` | True as users do not support trashing.<br><br>**Required** |
+| reassign | `integer` | Reassign the deleted member’s posts and links to this user ID.<br><br>**Required** |
 
 ### Definition
 
