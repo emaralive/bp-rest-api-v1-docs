@@ -89,14 +89,11 @@ bp.apiRequest( {
 
 ### Arguments
 
-| Name | Type | Description |
+| Attribute | Type | Description |
 | --- | --- | --- |
-| user\_login | `string` | An alphanumeric identifier for the member.  
-**Required** |
-| password | `string` | Password for the member.  
-**Required** |
-| email | `string` | The email address for the member.  
-**Required** |
+| user\_login | `string` | An alphanumeric identifier for the member.<br><br>**Required** |
+| password | `string` | Password for the member.<br><br>**Required** |
+| email | `string` | The email address for the member.<br><br>**Required** |
 | name | `string` | Display name for the member. |
 | roles | `array` | Roles assigned to the member. |
 | member\_type | `string` | A comma separated list of Member Types to set for the member. See this [documentation page](https://codex.buddypress.org/developer/member-types/) for more information. |
