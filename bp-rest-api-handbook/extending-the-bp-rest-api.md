@@ -5,7 +5,7 @@ You can extend any of the data endpoint responses by registering custom REST fie
 Hooking to `bp_rest_api_init` you first need to register your custom REST field.
 
 <aside class="notice">
-Note: Click the <strong>PHP</strong> language tab in the right hand column to see the code examples. 
+Note: Click the PHP language tab in the right hand column to see the code examples. 
 </aside>
 
 > In the below example code, you’ll notice the `get_callback` parameter, you need to use it to define the function to use to retrieve the value of your custom field and add it to the REST response. Additionally, to update the value of your custom field, you’ll need to code the function you defined as the `update_callback` parameter you had used.
