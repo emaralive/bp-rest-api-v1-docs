@@ -48,9 +48,9 @@ jQuery.ajax( {
 } );
 ```
 
-### Using the BP API Request script as a dependency
+### Using the WP API Request script as a dependency
 
-We advise you to use the `bp-api-request` JavaScript we’ve built to make sure to be compatible with our WordPress minimum required version: `4.7.0`.
+We advise you to use the `wp-api-request` JavaScript we’ve built to make sure to be compatible with our WordPress minimum required version: `4.7.0`.
 
 That’s why, you’ll find into each endpoint of the [Developer Endpoint Reference](#developer-endpoint-reference) examples of use relying on this dependency.
 
@@ -58,17 +58,17 @@ To enjoy it, you simply need to include it as a dependency of your JavaScript wh
 
 ```
 <?php
-// Using 'bp-api-request' as a dependency.
+// Using 'wp-api-request' as a dependency.
 function example_enqueue_script() {
-  wp_enqueue_script( 'my-script-handle', 'url-to/my-script.js', array( 'bp-api-request' ) );
+  wp_enqueue_script( 'my-script-handle', 'url-to/my-script.js', array( 'wp-api-request' ) );
 }
 add_action( 'bp_enqueue_scripts', 'example_enqueue_script' );
 ```
 
-Then into the `my-script.js` file we can directly use the `bp.apiRequest()` function:
+Then into the `my-script.js` file we can directly use the `wp.apiRequest()` function:
 
 ```
-bp.apiRequest( {
+wp.apiRequest( {
 	path: 'buddypress/v1/components',
 	type: 'GET',
 } ).done( function( data ) {
