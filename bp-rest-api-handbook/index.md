@@ -12,11 +12,11 @@ The BP REST API can also serve as a strong replacement for the WordPress admin-a
 
 ## About authentification
 
-**Cookie authentication** is the standard authentication method included with WordPress, the **BP REST API use it**.
+**Cookie authentication** is the standard authentication method included with WordPress, the **BP REST API** utilizes it.
 
 ### The REST API Nonce
 
-The WordPress REST API includes a technique called [nonces](https://codex.wordpress.org/WordPress_Nonces) to avoid [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) issues. This prevents other sites from forcing you to perform actions without explicitly intending to do so. This requires slightly special handling for the API.
+The WordPress REST API includes a technique called [nonces](https://developer.wordpress.org/apis/security/nonces/) to avoid [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) issues. This prevents other sites from forcing you to perform actions without explicitly intending to do so. This requires slightly special handling for the API.
 
 The API uses nonces with the action set to `wp_rest`. To generate it and pass it to your script you can use the `wp_localize_script()`function.
 
@@ -52,7 +52,7 @@ jQuery.ajax( {
 
 We advise you to use the `bp-api-request` JavaScript we’ve built to make sure to be compatible with our WordPress minimum required version: `4.7.0`.
 
-That’s why, you’ll find into each endpoint of the [Developer Endpoint Reference](https://developer.buddypress.org/bp-rest-api/reference/) examples of use relying on this dependency.
+That’s why, you’ll find into each endpoint of the [Developer Endpoint Reference](#developer-endpoint-reference) examples of use relying on this dependency.
 
 To enjoy it, you simply need to include it as a dependency of your JavaScript when [registering/enqueueing](https://developer.wordpress.org/plugins/javascript/enqueuing/) your script into WordPress. For example, our `example_enqueue_script()` function becomes:
 
