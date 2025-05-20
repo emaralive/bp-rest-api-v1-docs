@@ -4,6 +4,8 @@ You can extend any of the data endpoint responses by registering custom REST fie
 
 Hooking to `bp_rest_api_init` you first need to register your custom REST field.
 
+> In the below example code, you’ll notice the `get_callback` parameter, you need to use it to define the function to use to retrieve the value of your custom field and add it to the REST response. Additionally, to update the value of your custom field, you’ll need to code the function you defined as the `update_callback` parameter you had used.
+
 ```php
 function example_register_activity_rest_field() {
     bp_rest_register_field(
@@ -22,8 +24,7 @@ function example_register_activity_rest_field() {
 }
 add_action( 'bp_rest_api_init', 'example_register_activity_rest_field' );
 ```
-
-At line 7 of the above code, you’ll notice the `get_callback` parameter, you need to use it to define the function to use to retrieve the value of your custom field and add it to the REST response.
+> The function associated with the 'get_callback' parameter.
 
 ```php
 /**
@@ -40,8 +41,7 @@ function example_get_rest_field_callback( $array, $attribute ) {
     return bp_activity_get_meta( $array['id'], $metadata_key );
 }
 ```
-
-To update the value of your custom field, you’ll need to code the function you defined as the `update_callback` parameter you used at the registration step.
+> The function associated with the 'update_callback' parameter.
 
 ```php
 /**
