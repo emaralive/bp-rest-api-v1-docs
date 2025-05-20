@@ -56,7 +56,7 @@ That’s why, you’ll find into each endpoint of the [Developer Endpoint Refere
 
 To enjoy it, you simply need to include it as a dependency of your JavaScript when [registering/enqueueing](https://developer.wordpress.org/plugins/javascript/enqueuing/) your script into WordPress. For example, our `example_enqueue_script()` function becomes:
 
-```
+```php
 <?php
 // Using 'wp-api-request' as a dependency.
 function example_enqueue_script() {
@@ -67,7 +67,7 @@ add_action( 'bp_enqueue_scripts', 'example_enqueue_script' );
 
 Then into the `my-script.js` file we can directly use the `wp.apiRequest()` function:
 
-```
+```javascript
 wp.apiRequest( {
 	path: 'buddypress/v1/components',
 	type: 'GET',
