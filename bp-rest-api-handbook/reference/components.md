@@ -76,7 +76,13 @@ One of: `activate`, `deactivate`. |
 
 ### Example - Activate/Deactivate Component
 
-Alert: To use the `wp.apiRequest` function, you need to enqueue the `wp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="success">
+<strong>Alert</strong>: To use the <code>wp.apiRequest</code> function, you need to enqueue the <code>wp-api-request</code> JavaScript or use it as a dependency of your script. Refer to <a href="https://developer.wordpress.org/plugins/javascript/enqueuing/">this page</a> to know more about loading JavaScript files in WordPress.
+</aside>
+
+<aside class="notice">
+<strong>Note</strong>: Click a language tab at the top of the righthand column to view a code example for that language. 
+</aside>
 
 ```javascript
 wp.apiRequest( {
