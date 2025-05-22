@@ -14,7 +14,7 @@ The BP REST API can also serve as a strong replacement for the WordPress admin-a
 
 **Cookie authentication** is the standard authentication method included with WordPress, the **BP REST API** utilizes it.
 
-## The REST API Nonce
+### The REST API Nonce
 
 The WordPress REST API includes a technique called [nonces](https://developer.wordpress.org/apis/security/nonces/) to avoid [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) issues. This prevents other sites from forcing you to perform actions without explicitly intending to do so. This requires slightly special handling for the API.
 
@@ -36,7 +36,7 @@ function example_enqueue_script() {
 add_action( 'bp_enqueue_scripts', 'example_enqueue_script' );
 ```
 
-## Sending the nonce
+### Sending the nonce
 
 For developers making their own Ajax requests, the nonce will need to be passed with each request. The recommended way to send the nonce value is in the request header. Below is an example using jQuery.
 
@@ -56,7 +56,7 @@ jQuery.ajax( {
 } );
 ```
 
-## Using the WP API Request script as a dependency
+### Using the WP API Request script as a dependency
 
 We advise you to use the `wp-api-request` JavaScript we’ve built to make sure to be compatible with our WordPress minimum required version: `4.7.0`.
 
