@@ -63,7 +63,7 @@ We advise you to use the `wp-api-request` JavaScript we’ve built to make sure 
 That’s why, you’ll find into each endpoint of the [Developer Endpoint Reference](#developer-endpoint-reference) examples of use relying on this dependency.
 
 <aside class="notice">
-<strong>Note</strong>: The code examples in the righthand column are in the <strong>PHP</strong> and <strong>Javascript</strong>languages. 
+<strong>Note</strong>: The code examples in the righthand column are in the <strong>PHP</strong> and <strong>Javascript</strong> languages. 
 </aside>
 
 > To enjoy it, you simply need to include it as a dependency of your JavaScript when [registering/enqueueing](https://developer.wordpress.org/plugins/javascript/enqueuing/) your script into WordPress. For example, our `example_enqueue_script()` function becomes:
