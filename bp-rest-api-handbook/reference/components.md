@@ -19,7 +19,7 @@ The schema defines all the fields that exist for BuddyPress components.
 
 ## List the BuddyPress components
 
-### Arguments
+### Arguments - List Components
 
 | Attribute | Type | Description |
 | --- | --- | --- |
@@ -30,11 +30,11 @@ The schema defines all the fields that exist for BuddyPress components.
 | status | `string` | Limit result set to components with a specific status.<br><br>**Default**: `all`<br><br>**One of**: `all`, `active`, `inactive` |
 | type | `string` | Limit result set to components with a specific type.<br><br>**Default**: `all`<br><br>**One of**: `all`, `optional`, `retired`, `required` |
 
-### Definition
+### Definition - List Components
 
 `GET /buddypress/v1/components`
 
-### Example of use
+### Example of use - List Components
 
 <aside class="success">
 <strong>Alert</strong>: To use the <code>wp.apiRequest</code> function, you need to enqueue the <code>wp-api-request</code> JavaScript or use it as a dependency of your script. Refer to <a href="https://developer.wordpress.org/plugins/javascript/enqueuing/">this page</a> to know more about loading JavaScript files in WordPress.
@@ -58,9 +58,9 @@ wp.apiRequest( {
 } );
 ```
 
-## Activate or Deactivate a BuddyPress component
+## Activate/Deactivate a BuddyPress Component
 
-### Arguments
+### Arguments - Activate/Deactivate Component
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -70,11 +70,11 @@ wp.apiRequest( {
 **Required**.  
 One of: `activate`, `deactivate`. |
 
-### Definition
+### Definition - Activate/Deactivate Component
 
 `PUT /buddypress/v1/components`
 
-### Example of use
+### Example of use - Activate/Deactivate Component
 
 Alert: To use the `wp.apiRequest` function, you need to enqueue the `wp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
 
