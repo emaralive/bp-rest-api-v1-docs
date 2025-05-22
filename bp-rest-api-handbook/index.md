@@ -14,17 +14,15 @@ The BP REST API can also serve as a strong replacement for the WordPress admin-a
 
 **Cookie authentication** is the standard authentication method included with WordPress, the **BP REST API** utilizes it.
 
-### The REST API Nonce
+## The REST API Nonce
 
 The WordPress REST API includes a technique called [nonces](https://developer.wordpress.org/apis/security/nonces/) to avoid [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) issues. This prevents other sites from forcing you to perform actions without explicitly intending to do so. This requires slightly special handling for the API.
 
 The API uses nonces with the action set to `wp_rest`. To generate it and pass it to your script you can use the `wp_localize_script()`function.
 
 <aside class="notice">
-<strong>Note</strong>: The code examples in the righthand column are in the <strong>PHP</strong> language. 
+<strong>Note</strong>: The code example in the righthand column are in the <strong>PHP</strong> language. 
 </aside>
-
-###
 
 ```
 <?php
@@ -38,11 +36,15 @@ function example_enqueue_script() {
 add_action( 'bp_enqueue_scripts', 'example_enqueue_script' );
 ```
 
-### Sending the nonce
+## Sending the nonce
 
 For developers making their own Ajax requests, the nonce will need to be passed with each request. The recommended way to send the nonce value is in the request header. Below is an example using jQuery.
 
-```javascript
+<aside class="notice">
+<strong>Note</strong>: The code example in the righthand column are in the <strong>Javascript</strong> language. 
+</aside>
+
+```
 jQuery.ajax( {
   url: '/wp-json/buddypress/v1/components',
   beforeSend: function( xhr ) {
