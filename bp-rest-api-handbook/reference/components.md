@@ -1,35 +1,32 @@
-# Components
+# Components Endpoit
 
 BuddyPress chose a modular approach using components to organize its features. Two components are loaded by default (eg: BuddyPress Core and Community Members) while the majority are optionals. BuddyPress comes with 8 built-in optional components (Account Settings, Activity Streams, Extended Profiles, Friend connections, Notifications, Private messaging, User groups and Site Tracking).
 
 Note: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
 
-## Schema
+## Components Schema
 
 The schema defines all the fields that exist for BuddyPress components.
 
-<table class="wp-block-table"><tbody><tr><td><code>name</code><br>string</td><td>Name of the component.<br>Context: <code>view</code>, <code>edit</code>.</td></tr><tr><td><code>status</code><br>string</td><td>Whether the component is active or inactive.<br>Context: <code>view</code>, <code>edit</code>.<br>One of: <code>active</code>, <code>inactive</code>.</td></tr><tr><td><code>title</code><br>string</td><td>HTML title of the component.<br>Context: <code>view</code>, <code>edit</code>.</td></tr><tr><td><code>description</code><br>string</td><td>HTML description of the component.<br>Context: <code>view</code>, <code>edit</code>.</td></tr></tbody></table>
+| Attribute | Type | Description |
+| :--- | :--- | :--- |
+| name | `string` | Name of the component. <br><br>**Context**: `view`, `edit` |
+| status | `string` | Whether the component is active or inactive. <br><br>**Context**: `view`, `edit`. <br><br>**One of**: `active`, `inactive` |
+| title | `string` | HTML title of the component. <br><br>**Context**: `view`, `edit` |
+| description | `string` | HTML description of the component. <br><br>**Context**: `view`, `edit` |
 
 ## List the BuddyPress components
 
 ### Arguments
 
-| Name | Type | Description |
+| Attribute | Type | Description |
 | --- | --- | --- |
-| `context` | `string` | Scope under which the request is made; determines fields present in response.  
-Default: `view`  
-One of: `view`, `edit`. |
-| `page` | `integer` | Current page of the collection.  
-Default: `1` |
-| `per_page` | `integer` | Maximum number of components to be returned in result set.  
-Default: `10` |
-| `search` | `string` | Limit results to those matching a string. |
-| `status` | `string` | Limit result set to components with a specific status.  
-Default: `all`  
-One of: `all, active, inactive` |
-| `type` | `string` | Limit result set to components with a specific type.  
-Default: `all`  
-One of: `all, optional, retired, required` |
+| context | `string` | Scope under which the request is made; determines fields present in response.<br><br>**Default**: `view`<br><br>**One of**: `view`, `edit` |
+| page | `integer` | Current page of the collection.<br><br>**Default**: `1` |
+| per_page | `integer` | Maximum number of components to be returned in result set.<br><br>**Default**: `10` |
+| search | `string` | Limit results to those matching a string. |
+| status | `string` | Limit result set to components with a specific status.<br><br>**Default**: `all`<br><br>**One of**: `all`, `active`, `inactive` |
+| type | `string` | Limit result set to components with a specific type.<br><br>**Default**: `all`<br><br>**One of**: `all`, `optional`, `retired`, `required` |
 
 ### Definition
 
@@ -37,10 +34,16 @@ One of: `all, optional, retired, required` |
 
 ### Example of use
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="success">
+<strong>Alert</strong>: To use the `wp.apiRequest` function, you need to enqueue the `wp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+</aside>
+
+<aside class="notice">
+<strong>Note</strong>: The code example in the righthand column are in the <strong>PHP</strong> language. 
+</aside>
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/components',
   type: 'GET',
   data: {
@@ -71,10 +74,10 @@ One of: `activate`, `deactivate`. |
 
 ### Example of use
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+Alert: To use the `wp.apiRequest` function, you need to enqueue the `wp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/components',
   type: 'PUT',
   data: {
