@@ -64,11 +64,8 @@ wp.apiRequest( {
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `name` | `string` | Name of the component.  
-**Required**. |
-| `action` | `string` | Whether to activate or deactivate the component.  
-**Required**.  
-One of: `activate`, `deactivate`. |
+| name | `string` | Name of the component.<br><br>**Required**. |
+| action | `string` | Whether to activate or deactivate the component.<br><br>**Required**<br><br>**One of**: `activate`, `deactivate` |
 
 ### Definition - Activate/Deactivate Component
 
