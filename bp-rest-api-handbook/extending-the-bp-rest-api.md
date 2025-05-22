@@ -5,7 +5,7 @@ You can extend any of the data endpoint responses by registering custom REST fie
 Hooking to `bp_rest_api_init` you first need to register your custom REST field.
 
 <aside class="notice">
-<strong>Note</strong>: The code examples are <strong>PHP</strong>. 
+<strong>Note</strong>: The code examples in the righthand column are in the <strong>PHP</strong> language. 
 </aside>
 
 ### 
