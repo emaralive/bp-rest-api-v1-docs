@@ -36,7 +36,7 @@ The schema defines all the fields that exist for a member object.
 
 ## List Members
 
-### Arguments
+### Arguments - List Members
 
 | Attribute | Type | Description |
 | --- | --- | --- |
@@ -53,11 +53,11 @@ The schema defines all the fields that exist for a member object.
 | member\_type | `array` | Limit results set to certain type(s). See this [documentation page](https://codex.buddypress.org/developer/member-types/) for more information.<br><br>**Default**: `[]` |
 | xprofile | `array` | Limit results set to a certain XProfile field.<br><br>**Default**: `[]` |
 
-### Definition
+### Definition - List Members
 
 `GET /buddypress/v1/members`
 
-### Example of use
+### Example - List Members
 
 Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
 
