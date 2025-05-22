@@ -2,7 +2,9 @@
 
 BuddyPress chose a modular approach using components to organize its features. Two components are loaded by default (eg: BuddyPress Core and Community Members) while the majority are optionals. BuddyPress comes with 8 built-in optional components (Account Settings, Activity Streams, Extended Profiles, Friend connections, Notifications, Private messaging, User groups and Site Tracking).
 
-Note: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+<aside class="warning">
+<strong>Note</strong>: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+</aside>
 
 ## Components Schema
 
@@ -35,11 +37,11 @@ The schema defines all the fields that exist for BuddyPress components.
 ### Example of use
 
 <aside class="success">
-<strong>Alert</strong>: To use the `wp.apiRequest` function, you need to enqueue the `wp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<strong>Alert</strong>: To use the <code>wp.apiRequest</code> function, you need to enqueue the <code>wp-api-request</code> JavaScript or use it as a dependency of your script. Refer to <a href="https://developer.wordpress.org/plugins/javascript/enqueuing/">this page</a> to know more about loading JavaScript files in WordPress.
 </aside>
 
 <aside class="notice">
-<strong>Note</strong>: The code example in the righthand column are in the <strong>PHP</strong> language. 
+<strong>Note</strong>: Click a language tab at the top of the righthand column to view a code example for that language. 
 </aside>
 
 ```javascript
