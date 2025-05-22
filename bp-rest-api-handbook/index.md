@@ -56,7 +56,7 @@ jQuery.ajax( {
 } );
 ```
 
-### Using the WP API Request script as a dependency
+### The WP API Request script as a dependency
 
 We advise you to use the `wp-api-request` JavaScript we’ve built to make sure to be compatible with our WordPress minimum required version: `4.7.0`.
 
