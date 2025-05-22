@@ -34,7 +34,7 @@ The schema defines all the fields that exist for BuddyPress components.
 
 `GET /buddypress/v1/components`
 
-### Example of use - List Components
+### Example - List Components
 
 <aside class="success">
 <strong>Alert</strong>: To use the <code>wp.apiRequest</code> function, you need to enqueue the <code>wp-api-request</code> JavaScript or use it as a dependency of your script. Refer to <a href="https://developer.wordpress.org/plugins/javascript/enqueuing/">this page</a> to know more about loading JavaScript files in WordPress.
@@ -74,7 +74,7 @@ One of: `activate`, `deactivate`. |
 
 `PUT /buddypress/v1/components`
 
-### Example of use - Activate/Deactivate Component
+### Example - Activate/Deactivate Component
 
 Alert: To use the `wp.apiRequest` function, you need to enqueue the `wp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
 
