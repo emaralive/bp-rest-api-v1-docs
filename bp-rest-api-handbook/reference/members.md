@@ -59,7 +59,9 @@ The schema defines all the fields that exist for a member object.
 
 ### Example - List Members
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="warning">
+<strong>Note</strong>: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+</aside>
 
 ```javascript
 bp.apiRequest( {
@@ -85,9 +87,9 @@ bp.apiRequest( {
 } );
 ```
 
-## Create a member
+## Create a Member
 
-### Arguments
+### Arguments - Create Member
 
 | Attribute | Type | Description |
 | --- | --- | --- |
@@ -98,13 +100,15 @@ bp.apiRequest( {
 | roles | `array` | Roles assigned to the member. |
 | member\_type | `string` | A comma separated list of Member Types to set for the member. See this [documentation page](https://codex.buddypress.org/developer/member-types/) for more information. |
 
-### Definition
+### Definition - Create Member
 
 `POST /buddypress/v1/members`
 
-### Example of use
+### Example - Create Member
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="warning">
+<strong>Note</strong>: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+</aside>
 
 ```javascript
 bp.apiRequest( {
@@ -124,9 +128,9 @@ bp.apiRequest( {
 } );
 ```
 
-## Retrieve a specific member
+## Retrieve a Specific Member
 
-### Arguments
+### Arguments - Retrieve Member
 
 | Attribute | Type | Description |
 | --- | --- | --- |
@@ -134,13 +138,15 @@ bp.apiRequest( {
 | context | `string` | Scope under which the request is made; determines fields present in response.<br><br>**Default**: `view`<br><br>**One of**: `view`, `embed`,`edit` |
 | populate\_extras | `boolean` | Whether to fetch extra BP data about the returned member.<br><br>**Default**: `false` |
 
-### Definition
+### Definition - Retrieve Member
 
 `GET /buddypress/v1/members/<id>`
 
-### Example of use
+### Example - Retrieve Member
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="warning">
+<strong>Note</strong>: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+</aside>
 
 ```javascript
 bp.apiRequest( {
@@ -156,9 +162,9 @@ bp.apiRequest( {
 } );
 ```
 
-## Update a specific member
+## Update a Specific Member
 
-### Arguments
+### Arguments - Update Member
 
 | Attribute | Type | Description |
 | --- | --- | --- |
@@ -167,13 +173,15 @@ bp.apiRequest( {
 | roles | `array` | Roles assigned to the member. |
 | member\_type | `string` | A comma separated list of Member Types to set for the member. See this [documentation page](https://codex.buddypress.org/developer/member-types/) for more information. |
 
-### Definition
+### Definition - Update Member
 
 `PUT /buddypress/v1/members/<id>`
 
-### Example of use
+### Example - Update Member
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="warning">
+<strong>Note</strong>: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+</aside>
 
 ```javascript
 bp.apiRequest( {
@@ -191,9 +199,9 @@ bp.apiRequest( {
 } );
 ```
 
-## Delete a specific member
+## Delete a Specific Member
 
-### Arguments
+### Arguments - Delete Member
 
 | Attribute | Type | Description |
 | --- | --- | --- |
@@ -201,13 +209,15 @@ bp.apiRequest( {
 | force | `boolean` | Required to be true, as members do not support trashing. |
 | reassign | `integer` | Reassign the deleted member’s posts and links to this user ID.<br><br>**Required** |
 
-### Definition
+### Definition - Delete Member
 
 `DELETE /buddypress/v1/members/<id>`
 
-### Example of use
+### Example - Delete Member
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="warning">
+<strong>Note</strong>: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+</aside>
 
 ```javascript
 bp.apiRequest( {
@@ -225,21 +235,23 @@ bp.apiRequest( {
 } );
 ```
 
-## Retrieve the logged in member
+## Retrieve the Logged-in Member
 
-### Arguments
+### Arguments - Retrieve Logged-in Member
 
 | Attribute | Type | Description |
 | --- | --- | --- |
 | context | `string` | Scope under which the request is made; determines fields present in response.>br><br>**Default**: `view`<br><br>**One of**: `view`, `embed`, `edit` |
 
-### Definition
+### Definition - Retrieve Logged-in Member
 
 `GET /buddypress/v1/members/me`
 
-### Example of use
+### Example - Retrieve Logged-in Member
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="warning">
+<strong>Note</strong>: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+</aside>
 
 ```javascript
 bp.apiRequest( {
@@ -255,9 +267,9 @@ bp.apiRequest( {
 } );
 ```
 
-## Update the logged in member
+## Update the Logged-in Member
 
-### Arguments
+### Arguments - Update Logged-in Member
 
 | Attribute | Type | Description |
 | --- | --- | --- |
@@ -267,13 +279,15 @@ bp.apiRequest( {
 
 *(1) To update roles, the logged in member must have the* `*promote_user*` *capability.*
 
-### Definition
+### Definition - Update Logged-in Member
 
 `PUT /buddypress/v1/members/me`
 
-### Example of use
+### Example - Update Logged-in Member
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="warning">
+<strong>Note</strong>: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+</aside>
 
 ```javascript
 bp.apiRequest( {
@@ -290,22 +304,24 @@ bp.apiRequest( {
 } );
 ```
 
-## Delete the logged in member
+## Delete the Logged-in Member
 
-### Arguments
+### Arguments - Delete Logged-in Member
 
 | Attribute | Type | Description |
 | --- | --- | --- |
 | force | `boolean` | True as users do not support trashing.<br><br>**Required** |
 | reassign | `integer` | Reassign the deleted member’s posts and links to this user ID.<br><br>**Required** |
 
-### Definition
+### Definition - Delete Logged-in Member
 
 `DELETE /buddypress/v1/members/me`
 
-### Example of use
+### Example - Delete Logged-in Member
 
-Alert: To use the `bp.apiRequest` function, you need to enqueue the `bp-api-request` JavaScript or use it as a dependency of your script. Refer to [this page](https://developer.wordpress.org/plugins/javascript/enqueuing/) to know more about loading JavaScript files in WordPress.
+<aside class="warning">
+<strong>Note</strong>: It’s important to note there can be more optional components regarding the BuddyPress plugins installed on the website : these plugins can use the BP Component API to incorpore the lists of active or inactive BuddyPress components.
+</aside>
 
 ```javascript
 bp.apiRequest( {
