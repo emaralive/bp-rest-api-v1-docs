@@ -20,7 +20,11 @@ The WordPress REST API includes a technique called [nonces](https://developer.w
 
 The API uses nonces with the action set to `wp_rest`. To generate it and pass it to your script you can use the `wp_localize_script()`function.
 
-```php
+<aside class="notice">
+<strong>Note</strong>: The code examples in the righthand column are in the <strong>PHP</strong> language. 
+</aside>
+
+```
 <?php
 // Using wp_localize_script()
 function example_enqueue_script() {
