@@ -14,9 +14,9 @@ This API reference provides information on the specific endpoints available thro
 | --- | --- |
 | [Components](https://developer.buddypress.org/bp-rest-api/reference/components/) | `/buddypress/v1/components` |
 | [Members](https://developer.buddypress.org/bp-rest-api/reference/members/) | `/buddypress/v1/members` |
-----
+<hr>
 <details>
-<summary>Endpoint references to be edited/completed in the future</summary>
+<summary>Additional endpoint references to be edited/completed in the future</summary>
   
 | Resource | Base Route |
 | --- | --- |
@@ -45,4 +45,4 @@ This API reference provides information on the specific endpoints available thro
 
 </details>
 
-----
+<hr>
