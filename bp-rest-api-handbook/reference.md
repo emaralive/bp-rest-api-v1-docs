@@ -16,7 +16,7 @@ This API reference provides information on the specific endpoints available thro
 | [Members](https://developer.buddypress.org/bp-rest-api/reference/members/) | `/buddypress/v1/members` |
 
 <details>
-<summary>Additional endpoint references to be edited/completed in the future</summary>
+<summary><h3>Additional endpoint references to be edited/completed in the future</h3></summary>
   
 | Resource | Base Route |
 | --- | --- |
