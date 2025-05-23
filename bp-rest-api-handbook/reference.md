@@ -14,6 +14,12 @@ This API reference provides information on the specific endpoints available thro
 | --- | --- |
 | [Components](https://developer.buddypress.org/bp-rest-api/reference/components/) | `/buddypress/v1/components` |
 | [Members](https://developer.buddypress.org/bp-rest-api/reference/members/) | `/buddypress/v1/members` |
+----
+<details>
+<summary>Endpoint references to be edited/completed in the future</summary>
+  
+| Resource | Base Route |
+| --- | --- |
 | [Activity](https://developer.buddypress.org/bp-rest-api/reference/activity/) | `/buddypress/v1/activity` |
 | [Extended Profiles](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/): |  | 
 | – [Profile Group](https://developer.buddypress.org/bp-rest-api/reference/extended-profiles/profile-group/) | `/buddypress/v1/xprofile/groups` | 
@@ -36,3 +42,7 @@ This API reference provides information on the specific endpoints available thro
 | [User Blogs](https://developer.buddypress.org/bp-rest-api/reference/blogs/) | `/buddypress/v1/blogs` |
 | [User Signups](https://developer.buddypress.org/bp-rest-api/reference/signup/) | `/buddypress/v1/signup` |
 | [Friend Connections](https://developer.buddypress.org/bp-rest-api/reference/friends/) | `/buddypress/v1/friends` |
+
+</details>
+
+----
