@@ -71,7 +71,7 @@ wp.apiRequest( {
 
 `PUT /buddypress/v1/components`
 
-### Example - Activate/Deactivate Component
+### Example - Activate Component
 
 <aside class="success">
 <strong>Alert</strong>: To use the <code>wp.apiRequest</code> function, you need to enqueue the <code>wp-api-request</code> JavaScript or use it as a dependency of your script. Refer to <a href="https://developer.wordpress.org/plugins/javascript/enqueuing/">this page</a> to know more about loading JavaScript files in WordPress.
