@@ -68,7 +68,7 @@ The schema defines all the fields that exist for a member object.
 </aside>
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/members',
   type: 'GET',
   data: {
@@ -119,7 +119,7 @@ bp.apiRequest( {
 </aside>
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/members',
   type: 'POST',
   data: {
@@ -161,7 +161,7 @@ bp.apiRequest( {
 </aside>
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/members/2',
   type: 'GET',
   data: {
@@ -200,7 +200,7 @@ bp.apiRequest( {
 </aside>
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/members/2',
   type: 'PUT',
   data: {
@@ -240,7 +240,7 @@ bp.apiRequest( {
 </aside>
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/members/2',
   type: 'DELETE',
   data: {
@@ -278,7 +278,7 @@ bp.apiRequest( {
 </aside>
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/members/me',
   type: 'GET',
   data: {
@@ -318,7 +318,7 @@ bp.apiRequest( {
 </aside>
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/members/me',
   type: 'PUT',
   data: {
@@ -356,7 +356,7 @@ bp.apiRequest( {
 </aside>
 
 ```javascript
-bp.apiRequest( {
+wp.apiRequest( {
   path: 'buddypress/v1/members/me',
   type: 'DELETE',
   data: {
